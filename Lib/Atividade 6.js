@@ -57,3 +57,14 @@ const menorid = funcionarios.reduce((acumulador, atual) => {
 }, )
 
 console.log(menorid);
+
+console.log("\n----------------------------------------------------\n")
+
+    const toObject = nome =>{
+        const dados = {};
+        dados.nomeaux = nome;
+        return dados;
+    }
+
+    const UpperCase = funcionarios.map(toObject);
+    console.log(UpperCase);
