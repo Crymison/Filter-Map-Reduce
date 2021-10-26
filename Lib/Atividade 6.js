@@ -45,3 +45,15 @@ const funcionarios = [
 
 const filtraGerente = (funcionarios => funcionarios.categoria === 'gerente');
 console.log(funcionarios.filter(filtraGerente));
+
+console.log("\n----------------------------------------------------\n")
+
+const menorid = funcionarios.reduce((acumulador, atual) => {
+    if(atual < acumulador){
+        return atual;
+    }else{
+        return acumulador;
+    }
+}, )
+
+console.log(menorid);
