@@ -60,11 +60,5 @@ console.log(menorid);
 
 console.log("\n----------------------------------------------------\n")
 
-    const toObject = nome =>{
-        const dados = {};
-        dados.nomeaux = nome;
-        return dados;
-    }
-
-    const UpperCase = funcionarios.map(toObject);
+    const UpperCase = funcionarios.map(funcionarios => funcionarios.nome.toUpperCase());
     console.log(UpperCase);
